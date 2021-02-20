@@ -30,8 +30,16 @@ let point: { x: number; y: number } = {
 
 // function
 
-const logNumber:(i:number)=>void = (i:number)=>{
+const logNumber: (i: number) => void = (i: number) => {
     console.log(i);
-    
+
 }
+
+// when to use type annotations
+
+//  1) function that return the "any" type
+
+const json = '{"x":10,"y":30}';
+const cordinants:{x:number,y:number} = JSON.parse(json);
+console.log(cordinants);
 
